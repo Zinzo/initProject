@@ -38,9 +38,7 @@ const router = new VueRouter({
   ]
 });
 
-
 router.beforeEach((to, from, next) => {
-
   const authenticated = "1111.11111.1111";
   const isPublic = to.matched.some(record => record.meta.public);
 
@@ -50,6 +48,5 @@ router.beforeEach((to, from, next) => {
     next();
   }
 });
-
 
 export default router;

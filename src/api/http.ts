@@ -25,9 +25,3 @@ http.interceptors.response.use(
 );
 
 export default http;
-
-
-const http = axios.create({
-    baseURL: process.env.VUE_APP_API_URL,
-    timeout: 3000,
-});

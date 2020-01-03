@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Dashboard from '@/views/pages/dashboard/dashboard.vue';
+import Main from '@/views/pages/main/main.vue';
 import Root from '@/views/pages/root.vue';
 import Login from '@/views/pages/public/login/login.vue';
 import PageNotFonund from '@/views/pages/public/404.vue';
@@ -9,9 +9,9 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: 'dashboard',
-    meta: {title: 'dashboard', public: false},
-    component: Dashboard
+    path: '/main',
+    meta: {title: 'main', public: false},
+    component: Main
   },
 ];
 
